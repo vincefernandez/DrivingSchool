@@ -1,18 +1,12 @@
-/**
-* Template Name: Selecao - v2.3.1
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
+
+/* 
 html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -92,8 +86,13 @@ h6 {
     background: rgba(42, 44, 57, 0.9);
 }
 
+
+/* #header .navbar1 {
+    background: rgba(42, 44, 57, 0.9);
+} */
+
 #header.header-transparent {
-    background: transparent;
+    background: rgba(42, 44, 57, 0.9);
 }
 
 #header.header-backgroundblack {
@@ -800,7 +799,8 @@ section {
 # Services
 --------------------------------------------------------------*/
 
-.services .icon-box {
+
+/* .services .icon-box {
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -827,23 +827,25 @@ section {
     font-size: 64px;
     line-height: 1;
     transition: 0.5s;
-}
+} */
 
-.services .title {
+
+/* .services .title {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
     text-align: center;
-}
+} */
 
-.services .title a {
+
+/* .services .title a {
     color: #2a2c39;
     transition: ease-in-out 0.3s;
 }
 
 .services .title a:hover {
     color: #ef6603;
-}
+} */
 
 .services .description {
     font-size: 14px;
@@ -1251,6 +1253,8 @@ section {
     padding: 60px 0;
 }
 
+
+/* 
 .team .member {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1272,9 +1276,10 @@ section {
     opacity: 0;
     transition: ease-in-out 0.3s;
     text-align: center;
-}
+} */
 
-.team .member .social a {
+*/
+/* .team .member .social a {
     transition: color 0.3s;
     color: #2a2c39;
     margin: 0 3px;
@@ -1290,13 +1295,15 @@ section {
 
 .team .member .social a:hover {
     background: #fc8129;
-}
+} */
 
-.team .member .social i {
+
+/* .team .member .social i {
     font-size: 18px;
-}
+} */
 
-.team .member .member-info {
+
+/* .team .member .member-info {
     padding: 25px 15px;
 }
 
@@ -1324,7 +1331,7 @@ section {
 .team .member:hover .social {
     opacity: 1;
     bottom: 15px;
-}
+} */
 
 
 /*--------------------------------------------------------------

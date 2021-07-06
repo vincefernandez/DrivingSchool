@@ -1,18 +1,27 @@
 <?php 
+require_once('pages/connection.php');
+require('pages/app.php');
+/*
 if(isset($_POST['EnrollSubmit'])){
-    
-    ?>
-    
-    <!-- <div class="alert alert-success" role="alert" style="margin-top: 100px;">
-    <h4 class="alert-heading">Well done!</h4>
-    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-    <hr>
-    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-  </div> -->
-<script>alert('We sent you an email');</script>
-<?php
-}
 
+$firstname = $_POST['fn'];
+$email = $_POST['email'];
+$lastname = $_POST['ln'];
+$address = $_POST['address'];
+$contact = $_POST['contact'];
+$course = $_POST['courses'];
+$date = date("Y-m-d");
+$sql = "INSERT INTO enroll (first_name, last_name, address,email,contact,course,status,date) 
+VALUES ('$firstname', '$lastname','$address','$email','$contact','$course','Pending',NOW())";
+if(mysqli_query($mysqli, $sql)){
+    ?>
+    <script>alert('You are  Successfully Enroll \n Wait for the Approval of Admin');</script>
+   <?php
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($mysqli);
+}
+}
+*/
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +36,6 @@ if(isset($_POST['EnrollSubmit'])){
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/images/favicon.jpg" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -37,7 +44,7 @@ if(isset($_POST['EnrollSubmit'])){
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
@@ -45,7 +52,7 @@ if(isset($_POST['EnrollSubmit'])){
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/modified.css" rel="stylesheet">
@@ -54,7 +61,7 @@ if(isset($_POST['EnrollSubmit'])){
 
 <body>
 
-<header id="header" class="fixed-top d-flex align-items-center  header-backgroundblack ">
+<!-- <header id="header" class="fixed-top d-flex align-items-center  header-backgroundblack ">
 
 
         <div class="container d-flex align-items-center ">
@@ -63,8 +70,7 @@ if(isset($_POST['EnrollSubmit'])){
                 <h1 class="text-light">
                     <img src="assets/images/Logo.png" alt="">
                     <a href="index.html">JYBG Driving School</a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+             
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
@@ -75,17 +81,17 @@ if(isset($_POST['EnrollSubmit'])){
                     <li><a href="index.php#Services">Services</a></li>
                     <li><a href="index.php#cta">Enroll Now!</a></li>
                     <li><a href="index.php#Portfolio">Portfolio</a></li>
-                    <!-- <li><a href="#pricing">Pricing</a></li> -->
+                   
                     <li><a href="index.php#team">Team</a></li>
                    
                     <li><a href="index.php#contact">Contact</a></li>
 
                 </ul>
             </nav>
-            <!-- .nav-menu -->
+            
 
         </div>
-    </header>
+    </header> -->
 
     
 <section id="contact" class="contact">
@@ -153,11 +159,11 @@ if(isset($_POST['EnrollSubmit'])){
                                 <select name="courses" id="course" name="courses" class="form-control" onchange="js(event)">
                                 
                               
-                                <option value="TDC" id="TDC">Theoretical Driving Course</option>
-                                    <option value="PDC" id="PDC">Practical Driving Course</option>
-                                    <option value="MPDC" id="MPDC">Motorcycle Practical Driving Course</option>
-                                    <option value="PC" id="RDC">Regular Driving Course</option>
-                                    <option value="PC" id="PDC">Private Driving Course</option>
+                                <option value="Theoretical Driving Course" id="TDC">Theoretical Driving Course</option>
+                                    <option value="Practical Driving Course" id="PDC">Practical Driving Course</option>
+                                    <option value="Motorcycle Practical Driving Course" id="MPDC">Motorcycle Practical Driving Course</option>
+                                    <option value="Regular Driving Course" id="RDC">Regular Driving Course</option>
+                                    <option value="Private Driving Course" id="PDC">Private Driving Course</option>
                                 </select>
                             <!-- <input type="combo" class="form-control" name="address" id="address" placeholder="Address" data-rule="minlen:11" data-msg="Please enter a Valid Address" /> -->
                                 <div class="validate"></div>
@@ -202,14 +208,14 @@ if(isset($_POST['EnrollSubmit'])){
     <a href="index.php" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/venobox/venobox.min.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script> -->
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

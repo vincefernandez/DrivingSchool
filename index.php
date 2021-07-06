@@ -4,7 +4,7 @@
     <?php require_once('header.php'); ?>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
+   
     <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
         <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
@@ -331,7 +331,7 @@
         <!-- End Services Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
+        <!-- <section id="portfolio" class="portfolio">
             <div class="container">
 
                 <div class="section-title" data-aos="zoom-out">
@@ -433,7 +433,7 @@
 
 
 
-                </div>
+                </div> -->
 
                 <!-- <div class="card-columns">
   <div class="card bg-primary">
@@ -468,9 +468,9 @@
   </div>
 </div> -->
 
-
+<!-- 
             </div>
-        </section>
+        </section> -->
         <!-- End Portfolio Section -->
 
         <!-- ======= Testimonials Section ======= -->
@@ -725,7 +725,7 @@
                             <div class="member-img">
                                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                                 <div class="social">
-                                    <a href=""><i class="icofont-twitter"></i></a>
+                                    <a href="#facebook"><i class="icofont-twitter"></i></a>
                                     <a href=""><i class="icofont-facebook"></i></a>
                                     <a href=""><i class="icofont-instagram"></i></a>
                                     <a href=""><i class="icofont-linkedin"></i></a>

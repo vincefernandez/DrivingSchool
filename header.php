@@ -19,16 +19,16 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> 
+    <!-- <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet"> --> 
 
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
 
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/modified.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
 
 
-        <div class="container d-flex align-items-center">
+        <div class="container navbar1 d-flex align-items-center">
 
             <div class="logo mr-auto">
                 <h1 class="text-light">
@@ -57,7 +57,7 @@
                     
                     <li><a href="#services">Services</a></li>
                     <li><a href="#cta">Enroll Now!</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
                     <!-- <li><a href="#pricing">Pricing</a></li> -->
                     <li><a href="#team">Team</a></li>
                    
